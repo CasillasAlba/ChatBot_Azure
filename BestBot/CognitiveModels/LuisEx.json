@@ -1,0 +1,516 @@
+{
+  "luis_schema_version": "7.0.0",
+  "intents": [
+    {
+      "name": "CancelarCita",
+      "features": []
+    },
+    {
+      "name": "Confirmacion",
+      "features": []
+    },
+    {
+      "name": "ConsultarCita",
+      "features": []
+    },
+    {
+      "name": "None",
+      "features": []
+    },
+    {
+      "name": "PedirCita",
+      "features": [
+        {
+          "featureName": "CiudadDescriptor",
+          "isRequired": false
+        },
+        {
+          "featureName": "FacultadDescriptor",
+          "isRequired": false
+        },
+        {
+          "featureName": "HoraDescriptor",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "RecibirCorreo",
+      "features": []
+    },
+    {
+      "name": "Saludar",
+      "features": []
+    }
+  ],
+  "entities": [
+    {
+      "name": "Cita",
+      "children": [
+        {
+          "name": "FullCita",
+          "children": [
+            {
+              "name": "Ciudad",
+              "children": [],
+              "features": [
+                {
+                  "modelName": "Ciudad",
+                  "isRequired": false
+                },
+                {
+                  "featureName": "CiudadDescriptor",
+                  "isRequired": false
+                }
+              ]
+            },
+            {
+              "name": "Hora",
+              "children": [],
+              "features": [
+                {
+                  "modelName": "Hora",
+                  "isRequired": false
+                },
+                {
+                  "featureName": "HoraDescriptor",
+                  "isRequired": false
+                }
+              ]
+            },
+            {
+              "name": "Facultad",
+              "children": [],
+              "features": [
+                {
+                  "modelName": "Facultad",
+                  "isRequired": false
+                },
+                {
+                  "featureName": "FacultadDescriptor",
+                  "isRequired": false
+                }
+              ]
+            },
+            {
+              "name": "CitaType",
+              "children": [],
+              "features": []
+            },
+            {
+              "name": "Correo",
+              "children": [],
+              "features": [
+                {
+                  "modelName": "Correo",
+                  "isRequired": false
+                }
+              ]
+            }
+          ],
+          "features": [
+            {
+              "featureName": "CiudadDescriptor",
+              "isRequired": false
+            },
+            {
+              "featureName": "FacultadDescriptor",
+              "isRequired": false
+            },
+            {
+              "featureName": "HoraDescriptor",
+              "isRequired": false
+            }
+          ]
+        }
+      ],
+      "roles": [],
+      "features": []
+    },
+    {
+      "name": "Correo",
+      "children": [],
+      "roles": [],
+      "features": []
+    },
+    {
+      "name": "Hora",
+      "children": [],
+      "roles": [],
+      "features": []
+    }
+  ],
+  "hierarchicals": [],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "Ciudad",
+      "subLists": [
+        {
+          "canonicalForm": "Granada",
+          "list": [
+            "granada",
+            "grana"
+          ]
+        },
+        {
+          "canonicalForm": "Melilla",
+          "list": [
+            "melilla"
+          ]
+        },
+        {
+          "canonicalForm": "Ceuta",
+          "list": [
+            "ceuta"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "Facultad",
+      "subLists": [
+        {
+          "canonicalForm": "Informatica",
+          "list": [
+            "ETSIIT",
+            "Teleco",
+            "Telecomunicaciones"
+          ]
+        },
+        {
+          "canonicalForm": "Arquitectura",
+          "list": [
+            "ETS Arquitectura"
+          ]
+        },
+        {
+          "canonicalForm": "Bellas Artes ",
+          "list": [
+            "BA",
+            "BBAA"
+          ]
+        },
+        {
+          "canonicalForm": "Salud",
+          "list": []
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "prebuiltEntities": [],
+  "utterances": [
+    {
+      "text": "alba@correo.es",
+      "intent": "RecibirCorreo",
+      "entities": [
+        {
+          "entity": "Correo",
+          "startPos": 0,
+          "endPos": 13,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "borra mi cita",
+      "intent": "CancelarCita",
+      "entities": []
+    },
+    {
+      "text": "buenas",
+      "intent": "Saludar",
+      "entities": []
+    },
+    {
+      "text": "buenas tardes",
+      "intent": "Saludar",
+      "entities": []
+    },
+    {
+      "text": "buenos dias",
+      "intent": "Saludar",
+      "entities": []
+    },
+    {
+      "text": "cancela la cita por favor",
+      "intent": "CancelarCita",
+      "entities": []
+    },
+    {
+      "text": "cancela mi cita",
+      "intent": "CancelarCita",
+      "entities": []
+    },
+    {
+      "text": "cancela por favor",
+      "intent": "CancelarCita",
+      "entities": []
+    },
+    {
+      "text": "cancelala no la quiero",
+      "intent": "CancelarCita",
+      "entities": []
+    },
+    {
+      "text": "cancelala por favor",
+      "intent": "CancelarCita",
+      "entities": []
+    },
+    {
+      "text": "cancelar",
+      "intent": "CancelarCita",
+      "entities": []
+    },
+    {
+      "text": "de acuerdo",
+      "intent": "Confirmacion",
+      "entities": []
+    },
+    {
+      "text": "fin",
+      "intent": "Confirmacion",
+      "entities": []
+    },
+    {
+      "text": "gracias",
+      "intent": "Confirmacion",
+      "entities": []
+    },
+    {
+      "text": "hey",
+      "intent": "Saludar",
+      "entities": []
+    },
+    {
+      "text": "hola",
+      "intent": "Saludar",
+      "entities": []
+    },
+    {
+      "text": "hola que tal",
+      "intent": "Saludar",
+      "entities": []
+    },
+    {
+      "text": "holaaaaaa",
+      "intent": "Saludar",
+      "entities": []
+    },
+    {
+      "text": "me gusta",
+      "intent": "Confirmacion",
+      "entities": []
+    },
+    {
+      "text": "mi correo es alba@correo.es",
+      "intent": "RecibirCorreo",
+      "entities": [
+        {
+          "entity": "Correo",
+          "startPos": 13,
+          "endPos": 26,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "mi email es josu@correo.com",
+      "intent": "RecibirCorreo",
+      "entities": [
+        {
+          "entity": "Correo",
+          "startPos": 12,
+          "endPos": 26,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "mostrar la cita",
+      "intent": "ConsultarCita",
+      "entities": []
+    },
+    {
+      "text": "pedir una cita en bellas artes de granada a las 9:30",
+      "intent": "PedirCita",
+      "entities": [
+        {
+          "entity": "Cita",
+          "startPos": 6,
+          "endPos": 51,
+          "children": [
+            {
+              "entity": "FullCita",
+              "startPos": 6,
+              "endPos": 51,
+              "children": [
+                {
+                  "entity": "CitaType",
+                  "startPos": 10,
+                  "endPos": 13,
+                  "children": []
+                },
+                {
+                  "entity": "Facultad",
+                  "startPos": 18,
+                  "endPos": 29,
+                  "children": []
+                },
+                {
+                  "entity": "Ciudad",
+                  "startPos": 34,
+                  "endPos": 40,
+                  "children": []
+                },
+                {
+                  "entity": "Hora",
+                  "startPos": 48,
+                  "endPos": 51,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "entity": "Hora",
+          "startPos": 48,
+          "endPos": 51,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "perfecto",
+      "intent": "Confirmacion",
+      "entities": []
+    },
+    {
+      "text": "que cita tengo?",
+      "intent": "ConsultarCita",
+      "entities": []
+    },
+    {
+      "text": "quiero cancelar mi cita",
+      "intent": "CancelarCita",
+      "entities": []
+    },
+    {
+      "text": "quiero consultar mi cita",
+      "intent": "ConsultarCita",
+      "entities": []
+    },
+    {
+      "text": "quiero una cita a las 10 en la facultad de informatica de granada",
+      "intent": "PedirCita",
+      "entities": [
+        {
+          "entity": "Cita",
+          "startPos": 7,
+          "endPos": 64,
+          "children": [
+            {
+              "entity": "FullCita",
+              "startPos": 7,
+              "endPos": 64,
+              "children": [
+                {
+                  "entity": "Hora",
+                  "startPos": 22,
+                  "endPos": 23,
+                  "children": []
+                },
+                {
+                  "entity": "Facultad",
+                  "startPos": 43,
+                  "endPos": 53,
+                  "children": []
+                },
+                {
+                  "entity": "Ciudad",
+                  "startPos": 58,
+                  "endPos": 64,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "entity": "Hora",
+          "startPos": 22,
+          "endPos": 23,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "suena bien",
+      "intent": "Confirmacion",
+      "entities": []
+    },
+    {
+      "text": "todo listo",
+      "intent": "Confirmacion",
+      "entities": []
+    },
+    {
+      "text": "vale gracias",
+      "intent": "Confirmacion",
+      "entities": []
+    },
+    {
+      "text": "ver mi cita",
+      "intent": "ConsultarCita",
+      "entities": []
+    },
+    {
+      "text": "ya esta",
+      "intent": "Confirmacion",
+      "entities": []
+    }
+  ],
+  "versionId": "0.1",
+  "name": "LuisEx",
+  "desc": "",
+  "culture": "es-es",
+  "tokenizerVersion": "1.0.0",
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "phraselists": [
+    {
+      "name": "Nombre",
+      "mode": true,
+      "words": "Alba",
+      "activated": true,
+      "enabledForAllModels": false
+    },
+    {
+      "name": "CiudadDescriptor",
+      "mode": true,
+      "words": "Granada,Ceuta,Melilla",
+      "activated": true,
+      "enabledForAllModels": false
+    },
+    {
+      "name": "FacultadDescriptor",
+      "mode": true,
+      "words": "Informatica,Bellas Artes,Arquitectura",
+      "activated": true,
+      "enabledForAllModels": false
+    },
+    {
+      "name": "HoraDescriptor",
+      "mode": true,
+      "words": "11:30,10:00,11:00,12:00,09:00,13:30,09:30,10:15",
+      "activated": true,
+      "enabledForAllModels": false
+    }
+  ],
+  "regex_features": [],
+  "patterns": [],
+  "settings": []
+}

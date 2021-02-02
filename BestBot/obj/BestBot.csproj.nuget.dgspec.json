@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Alba\\Desktop\\Alba\\MisCosas\\Universidad\\Curso_2020_2021\\NPI\\PracticaIndividual\\BestBot\\BestBot.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Alba\\Desktop\\Alba\\MisCosas\\Universidad\\Curso_2020_2021\\NPI\\PracticaIndividual\\BestBot\\BestBot.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alba\\Desktop\\Alba\\MisCosas\\Universidad\\Curso_2020_2021\\NPI\\PracticaIndividual\\BestBot\\BestBot.csproj",
+        "projectName": "BestBot",
+        "projectPath": "C:\\Users\\Alba\\Desktop\\Alba\\MisCosas\\Universidad\\Curso_2020_2021\\NPI\\PracticaIndividual\\BestBot\\BestBot.csproj",
+        "packagesPath": "C:\\Users\\Alba\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alba\\Desktop\\Alba\\MisCosas\\Universidad\\Curso_2020_2021\\NPI\\PracticaIndividual\\BestBot\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Alba\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Azure.Cosmos": {
+              "target": "Package",
+              "version": "[3.5.1, )"
+            },
+            "Microsoft.Bot.Builder.AI.Luis": {
+              "target": "Package",
+              "version": "[4.11.1, )"
+            },
+            "Microsoft.Bot.Builder.Dialogs": {
+              "target": "Package",
+              "version": "[4.11.1, )"
+            },
+            "Microsoft.Bot.Builder.Integration.AspNet.Core": {
+              "target": "Package",
+              "version": "[4.11.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

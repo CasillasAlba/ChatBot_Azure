@@ -1,0 +1,39 @@
+{
+  "id": "granadaartes",
+  "Ciudaddb": "GRANADA",
+  "Facultaddb": "ARTES",
+  "Citasdb": [
+      {
+          "Horadb": "09:00",
+          "Correodb": "LIBRE"
+      },
+      {
+          "Horadb": "09:30",
+          "Correodb": "LIBRE"
+      },
+      {
+          "Horadb": "10:00",
+          "Correodb": "LIBRE"
+      },
+      {
+          "Horadb": "10:30",
+          "Correodb": "LIBRE"
+      },
+      {
+          "Horadb": "11:00",
+          "Correodb": "LIBRE"
+      },
+      {
+          "Horadb": "11:30",
+          "Correodb": "LIBRE"
+      },
+      {
+          "Horadb": "12:00",
+          "Correodb": "LIBRE"
+      },
+      {
+          "Horadb": "12:30",
+          "Correodb": "LIBRE"
+      }
+  ]
+}
