@@ -19,4 +19,4 @@ The specifications of the project are avaiable in the documentation.
 
 <img height="30" src="https://user-images.githubusercontent.com/47610906/106672190-f6d88800-65af-11eb-8cb4-52b2476c71e6.PNG"> CosmosDB.
 
-<img height="30" src="https://user-images.githubusercontent.com/47610906/106672200-f93ae200-65af-11eb-8279-8494931f4566.png">  LUIS AI.
+<img height="35" src="https://user-images.githubusercontent.com/47610906/106672200-f93ae200-65af-11eb-8279-8494931f4566.png">  LUIS AI.
