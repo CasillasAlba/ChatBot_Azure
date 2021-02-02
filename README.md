@@ -3,13 +3,17 @@
 ## ESPAÑOL
 
 Práctica individual de la asignatura Nuevos Paradigmas de Interacción de la Universidad de Granada (UGR). Curso Académico 2020/2021.
+
 Desarrollo de un agente conversacional para la gestión de citas universitarias implementado con Azure de Microsoft.
+
 Las especificaciones del proyecto están disponibles en la documentación.
 
 ## ENGLISH
 
 Individual project for New Interaction Paradigms subject, taught at the University of Granada during the 2019/2020 academic year.
+
 A conversational agent has been implemented to manage academic appointments in Azure, Microsoft.
+
 The specifications of the project are avaiable in the documentation.
 
 
